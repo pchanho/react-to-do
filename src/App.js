@@ -71,7 +71,7 @@ export default function App() {
   return (
     <div className='app'>
       <div className='todo-list'>
-        // Mapping over todo items from state and displaying them.
+// Mapping over todo items from state and displaying them.
         {todos.map((todo, index) => (
             <Todo
               key={index}
