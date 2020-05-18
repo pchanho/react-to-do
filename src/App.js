@@ -15,6 +15,7 @@ function Todo({todo, index, completeTodo, removeTodo}){
   )
 }
 
+// Setting empty state for the form input using Hook
 function TodoForm({addTodo}) {
   const [value, setValue] = useState('');
 
@@ -37,6 +38,7 @@ function TodoForm({addTodo}) {
   )
 }
 
+// Add states to componants
 export default function App() {
   const [todos, setTodos] = useState([
     {
@@ -69,6 +71,7 @@ export default function App() {
   return (
     <div className='app'>
       <div className='todo-list'>
+        // Mapping over todo items from state and displaying them.
         {todos.map((todo, index) => (
             <Todo
               key={index}
